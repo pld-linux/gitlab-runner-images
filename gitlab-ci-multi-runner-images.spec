@@ -1,17 +1,13 @@
 Summary:	Prebuilt docker images for gitlab-ci-multi-runner
 Name:		gitlab-ci-multi-runner-images
-# Use gitlab-ci-multi-runner compatible version
-# altho --version gitlab-runner-helper shows something different:
-# 10.0.0~beta.16.g9d9d340 (9d9d340)
-# https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/issues/2715#note_39003513
 Version:	9.5.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Building
-Source0:	https://gitlab-ci-multi-runner-downloads.s3.amazonaws.com/master/docker/prebuilt-x86_64.tar.xz
-# Source0-md5:	23faa673cbf8fb9638be7d36777de66b
-Source1:	https://gitlab-ci-multi-runner-downloads.s3.amazonaws.com/master/docker/prebuilt-arm.tar.xz
-# Source1-md5:	202d1736af092894dbdcc231186bebaf
+Source0:	http://gitlab-ci-multi-runner-downloads.s3.amazonaws.com/v%{version}/docker/prebuilt-x86_64.tar.xz
+# Source0-md5:	3e17865359e937955302f73752426cd4
+Source1:	http://gitlab-ci-multi-runner-downloads.s3.amazonaws.com/v%{version}/docker/prebuilt-arm.tar.xz
+# Source1-md5:	3e566c807f5d9ad654a29e133b3f683d
 URL:		https://gitlab.com/gitlab-org/gitlab-ci-multi-runner/tree/master/dockerfiles/build
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
