@@ -1,7 +1,7 @@
 Summary:	Prebuilt docker images for gitlab-ci-multi-runner
 Name:		gitlab-ci-multi-runner-images
 Version:	9.5.0
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Building
 Source0:	http://gitlab-ci-multi-runner-downloads.s3.amazonaws.com/v%{version}/docker/prebuilt-x86_64.tar.xz
